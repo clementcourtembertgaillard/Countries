@@ -6,7 +6,6 @@ import CardMedia from "@mui/material/CardMedia";
 import { CardActionArea } from "@mui/material";
 
 import Popover from '@mui/material/Popover';
-import Typography from '@mui/material/Typography';
 
 import CountryInfo from "../CountryInfo";
 
