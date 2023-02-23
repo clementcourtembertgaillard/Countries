@@ -3,7 +3,7 @@ const useStyle = makeStyles(() => ({
   linkWrapper: {
     textDecoration: "none",
     marginRight: "30px",
-    color: "black"
+    color: "black",
   },
   unorderedListWrapper: {
     display: "flex",

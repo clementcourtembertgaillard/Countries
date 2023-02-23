@@ -24,8 +24,6 @@ const useCountryList = () => {
     axios.get("https://restcountries.com/v3.1/all").then((res) => {
       setCountriesData(res.data);
       setCountriesCount(res.data.length)
-      console.log(res.data);
-      console.log("useEffect");
     });
   }, []);
 

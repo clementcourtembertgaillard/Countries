@@ -1,4 +1,5 @@
 import { makeStyles } from "@mui/styles";
+
 const useStyle = makeStyles(() => ({
   cardWrapper: {
     maxWidth: "10%",

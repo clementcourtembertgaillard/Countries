@@ -4,11 +4,10 @@ import React from "react";
 import useStyles from './styles';
 
 const RadioButton = ({val,radioButtonValue,radioHandleChange}) => {
+  const style=useStyles();
 
-    const style=useStyles();
-
-    return(
-    <>
+  return(
+  <>
     <FormLabel className={style.radioLabel} >{val}</FormLabel>  
     <Radio
       checked={radioButtonValue === val}
@@ -16,7 +15,7 @@ const RadioButton = ({val,radioButtonValue,radioHandleChange}) => {
       value={val}
       className={style.radioButton}
     />
-    </>
+  </>
 )};
 
 export default RadioButton;
