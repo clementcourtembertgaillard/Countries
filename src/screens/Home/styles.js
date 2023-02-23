@@ -14,4 +14,13 @@ export default makeStyles(() => ({
     borderRadius: 10,
     height: 40,
   },
+  gridWrapper: {
+    spacing: "15",
+    display: "inline",
+    direction: "row",
+    justifyContent: "center",
+    alignItems: "center",
+    margin: "auto",
+    padding: "auto"
+  }
 }));

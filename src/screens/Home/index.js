@@ -6,6 +6,8 @@ import RadioButton from "../../componants/RadioButton";
 import useCountryList from "../../hooks/useCountryList";
 import CountriesContext from "../../appContexts/CountriesContext";
 
+import Grid from "@mui/material/Grid";
+
 const Home = () => {
   const style = useStyles();
   const [
@@ -43,13 +45,15 @@ const Home = () => {
           marginTop: 3,
         }}
       >
-        {countries
-          .filter((elem) => radioButtonValue == elem.region)
-          .sort((a, b) => a.population - b.population)
-          .slice(0, sliderValue)
-          .map((element) => (
-            <CountryCadre key={element.name.common} country={element} />
-          ))}
+        <Grid className={style.gridWrapper} container>
+          {countries
+            .filter((elem) => radioButtonValue == elem.region)
+            .sort((a, b) => a.population - b.population)
+            .slice(0, sliderValue)
+            .map((element) => (
+              <CountryCadre key={element.name.common} country={element} />
+            ))}
+          </Grid>
       </Box>
     </>
   );

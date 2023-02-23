@@ -12,7 +12,6 @@ const About=()=>{
             <br />
             <h1>Countries Count : {countriesCount}</h1>
         </div>
-        <LeafletMap/>
     </>
     );
 
